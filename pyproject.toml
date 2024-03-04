@@ -1,0 +1,32 @@
+[tool.poetry]
+name = 'sensei'
+version = '0.1.0'
+description = 'The python package'
+authors = ['Alexey <abelenkov2006@gmail.com>']
+license = 'MIT'
+readme = 'README.md'
+repository = 'https://github.com/blnkoff/sensei'
+homepage = 'https://github.com/blnkoff/sensei'
+classifiers = [
+    'Development Status :: 1 - Planning',
+    'Intended Audience :: Developers',
+    'Topic :: Software Development :: Libraries :: Python Modules',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3 :: Only',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: Microsoft :: Windows',
+    'Operating System :: MacOS'
+]
+packages = [{ include = 'sensei' }]
+
+[tool.poetry.dependencies]
+python = '^3.11'
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.2"
+build = "^1.1.1"
+twine = "^5.0.0"
+
+[build-system]
+requires = ['poetry-core']
+build-backend = 'poetry.core.masonry.api'
